@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-size: cover;
+	background-position: center;
+	font-family: 'Open Sans', sans-serif;
+	transition: 0.7s;
+	overflow-x: hidden;
+	
+}
+
+
+/*MENUBAR*/
+.menubar{
+	background: rgba(0,179,176,1.00);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+.menubar ul{
+	display: inline-flex;
+	list-style: none;
+	color: aliceblue;
+}
+.menubar ul li{
+	margin: 15px;
+	padding: 15px;
+	text-align: center;
+	transition: 00.5s;
+}
+.menubar ul li a{
+	text-decoration: none;
+	color: aliceblue;
+	transition: 0.3s;
+}
+.active, .menubar ul li:hover{
+	background: #008B89;
+	border-radius: 3px;	
+}
+.menubar .fa{
+	margin-right: 10px;
+}
+
+.menubar .fa-solid{
+	margin-left: 10px;
+}
+
+
+/*submenu*/
+.submenu{
+	display: none;
+}
+.menubar ul li:hover .submenu{
+	display: block;
+	position: absolute;
+	background: rgba(0,179,176,1.00);
+	margin-top: 15px;
+	margin-left: -17px;
+	transition: 0.5s;
+}
+.menubar ul li:hover .submenu ul{
+	display: block;
+	margin: 10px;
+	
+	z-index: 10;
+}
+.menubar ul li:hover .submenu ul li{
+	width: 250px;
+	padding: 10px;
+	border-bottom: 1px dashed #00EBFF;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.menubar ul li:hover .submenu ul li:last-child{
+	border-bottom: none;
+}
+.menubar ul li:hover .submenu ul li a:hover{
+	color: #008B89;
+}
+.menubar img{
+	margin-right: 50px;
+}
+
+.header__menu__mobile{
+	display: none;
+	color: white;
+	font-size: xx-large;
+	cursor: pointer;
+}
+
+/* drawer */
+
+.drawer{
+	display: none;
+	position: fixed;
+	z-index: 19;
+	width: 100%;
+	height: 100%;
+	background-color: #000000aa;
+}
+.drawer > aside{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 300px;
+	height: 100%;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 20;
+	background-color: rgba(0,179,176,1.00);
+}
+.drawer aside h1{
+	text-align: center;
+	font-weight: bold;
+	color: aliceblue;
+}
+.close{
+	height: 55px;
+	color: aliceblue;
+}
+.close .fa-solid{
+	color: aliceblue;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 42px;
+}
+/*****************************************************/
+/*mobile mwnu*/
+
+.drawer__header{
+	display: flex;
+}
+
+.drawer__menu{
+	list-style: none;
+	color: aliceblue;
+	background: rgba(0,179,176,1.00);
+}
+.drawer__menu > li{
+	display: block;
+	padding: 15px;
+	text-align: left;
+}
+.drawer__menu a,
+.drawer__menu span{
+	text-decoration: none;
+	color: aliceblue;
+}
+
+.drawer__menu > li > ul{
+	list-style: none;
+	color: aliceblue;
+	display: none;
+}
+.drawer__menu > li:hover > ul{
+	display: block;
+	background-color: #008B89;
+}
+.drawer__menu > li > ul > li{
+	display: block;
+	padding: 15px;
+	text-align: left;
+	border-bottom: 1px dashed rgba(0,179,176,1.00);
+}
+.drawer__menu > li:hover > ul > li:last-child{
+	border-bottom: none;
+}
+
+
+/***********************************************************/
+
+
+/* Heading Image */
+
+.header__image-1{
+	width: 100%;
+	font-size: 200%;
+	height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url(../images/home/uni_home-2.jpg);
+	background-position: relative;
+	padding: 0 5%;
+	display: flex;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	align-items: center;
+	justify-content: center;
+}
+.header__image-1 h1{
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: aliceblue;
+	padding-bottom: 42px;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	animation: 
+	  header__typing 3.5s steps(40) infinite,
+	  blink-caret .75s step-end infinite;
+}
+  @keyframes header__typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+.singup__singin{
+	text-decoration: none;
+}
+.header__button{
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 3px solid rgba(0,179,176,1.00);
+	background: transparent;
+	color: aliceblue;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	/* z-index: 2; */
+}
+.header__button span{
+	background: rgba(0,179,176,0.5);
+	height: 100%;
+	width: 0%;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	/* z-index: -1; */
+	transition: 0.5s;
+}
+.header__button:hover span{
+	width: 100%;
+}
+
+
+/*WELCOEM*/
+.titles{
+	
+	font-weight: bold;
+	text-align: center;
+	color: #009476;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.welcome{
+	display: flex;
+	justify-content: center;
+	padding: 20px 20px 70px 20px;
+}
+.welcome img{
+	width: 400px;
+	height: 380px;
+	padding-right: 20px;
+	position: relative;
+}
+.welcome p{
+	padding-top: 25px;
+	width: 30%;
+	text-align: justify;
+	color: #5C5C5C;
+}
+
+
+/* faculties*/
+.faculty__home{
+	position: relative;
+	background-repeat: no-repeat;
+	background: linear-gradient(rgba(0,179,176,0.7),rgba(0,179,176,1.00)), url("../images/home/faculties-bg.jpg");
+	background-position: center;
+	background-size: cover;
+/*	padding-bottom: 98px;*/
+}
+
+.faculty__home h2{
+	font-weight: bold;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+	padding: 55px;
+}
+.faculty__home h3{
+	font-weight: bold;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+	padding-top: 20px;
+	padding-bottom: 28px;
+	transition: 0.5s;
+}
+.faculty__on__home__page{
+	
+	display: flex;
+	justify-content: center;
+}
+
+.faculty__on__fac{
+	padding-left: 20px;
+}
+.faculty__on__fac img{
+	transition: 0.5s;
+}
+.faculty__on__fac img:hover{
+	transform: translateY(-20px);
+}
+.faculty__link{
+	text-decoration: none;
+	margin: 28px;
+}
+.faculty__on__fac a h3:hover{
+	background: #008B89;
+	border-radius: 3px;	
+	transform: translateY(10px);
+}
+.faculty__on__fac:last-child{
+	padding-right: 20px;
+}
+
+/*SERVICES*/
+
+.services__container h2{
+	
+	font-weight: bold;
+	text-align: center;
+	color: #009476;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.services__on__home{
+	display: flex;
+	justify-content: center;
+	padding: 20px 20px 70px 20px;
+}
+.services__on__home img{
+	width: 400px;
+	height: 380px;
+	padding-right: 20px;
+}
+.services__on__home p{
+	padding-top: 50px;
+	width: 25%;
+	text-align: justify;
+	color: #5C5C5C;
+}
+
+
+/*MAP*/
+.map__on__home{
+	display: flex;
+	justify-content: center;
+}
+.map__on__home__info{
+	padding-right: 40px;
+	color: #24262b;
+}
+.map__h{
+	font-weight: bold;
+	text-align: right;
+	color: #009476;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-right: 40px;
+}
+
+
+/*STUDENT LIFE*/
+.student__life__raw-1{
+	display: flex;
+	padding-right: 21px;
+	padding-left: 21px;
+	align-items: center;
+}
+.student__life__img{
+	padding: 15px;
+	transition: 0.5s;
+}
+.student__life__img:hover{
+	background: rgba(0, 179, 176, 1.00);
+	padding: 0;
+	transform: translateY(-20px);
+}
+
+
+/*********************************************************************************************************************************************
+       HOME PAGE AND NAV BAR RESPONSIVE
+*********************************************************************************************************************************************/
+
+
+/********************************************
+       MENUBAR(NAV BAR) RESPONSIVE
+********************************************/
+@media screen and (max-width: 1283px){
+	.menubar ul li{
+	margin: 3px;
+}
+}
+@media screen and (max-width: 1000px){
+	.header__menu__navbar{
+		display: none !important;
+	}
+	.header__menu__mobile{
+		display: block;
+	}
+	.menubar img{
+		padding: 7px;
+	}
+}
+@media (max-width: 300px){
+	.menubar{
+	 display: block;
+	}
+}
+/********************************************
+		 HEADING IMAGE RESPONSIVE 
+********************************************/
+@media (max-width: 1280px){
+	.header__image-1{
+		font-size: 150%;
+	}
+}
+@media (max-width: 900px){
+	.header__image-1{
+		font-size: 130%;
+	}
+}
+
+@media (max-width: 750px){
+	.header__image-1{
+		font-size: 140%;
+	}
+	.header__image-1 h1{
+		width: 100%;
+		top: 40%;
+		transform: translateY(-50%);
+		padding: 0;
+		word-break: break-all;
+		letter-spacing: 0;
+		font-size: 21px;
+	}
+	.header__button{
+		display: block;
+		top: 75%;
+	}
+
+}
+/****************************************
+       WECLCOME RESOPNSIVE
+****************************************/
+@media (max-width: 1000px){
+	.titles{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+	.welcome{
+	display: block;
+	align-content: center;
+
+}
+	.welcome img{
+	width: 100%;
+	height: auto;
+	padding-right: 0;
+}
+
+	.welcome p{
+	padding-top: 0;
+	width: 100%;
+	text-align: justify;
+}
+}
+@media (max-width: 1435px){
+	.welcome p{
+		padding-top: 0;
+	}
+}
+/****************************************
+    FACULTIES ON HOME PAGE RESOPNSIVE
+****************************************/
+@media (max-width: 1000px){
+	.faculty__on__home__page{
+	
+	display: block;
+	padding-right: 20px;
+}
+	.faculty__on__fac:last-child{
+	padding-right: 0px;
+}
+	
+}
+/****************************************
+    SERVICES RESOPNSIVE ON HOME PAGE
+****************************************/
+@media (max-width: 1000px){
+	.services__container h2{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+	.services__on__home{
+	display: block;
+	align-content: center;
+
+}
+	.services__on__home img{
+	width: 100%;
+	height: auto;
+	padding-right: 20px;
+}
+
+	.services__on__home p{
+	padding-top: 0;
+	width: 100%;
+	text-align: justify;
+}
+}
+/**********************************************
+            MAP RESPONSIVE ON HOME PAGE
+**********************************************/
+
+@media (max-width: 1000px){
+	.map__on__home{
+	display: block;
+	text-align: center;
+}
+	.map__on__home__info{
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 25px;
+}
+	.map__h{
+	text-align: center;
+	color: #009476;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+}
+	.map__responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+	.map__responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+}
+/**********************************************
+            STUDENT LIFE RESPONSIVE
+**********************************************/
+
+@media (max-width: 1000px){
+	.student__life__raw-1{
+		padding: 0 0 0 0;
+		display: block;
+}
+}

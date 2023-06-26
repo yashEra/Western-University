@@ -1,0 +1,255 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<!-- META DATA -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+		<title>Western University</title>
+		
+		<link rel="shortcut icon" type="image/icon" href="images/favicon.png"/>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/main-style.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+		
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div class="menubar">
+			<a href="index.html"><img src="images/logo.png" width="250px" hight="auto" align="center" alt="Logo"></a>
+			
+			<ul class="header__menu__navbar">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li>About Us<i class="fa-solid fa-caret-down"></i>
+				<div class="submenu">
+						<ul>
+							<li><a href="html/history.html">History</a></li>
+							<li><a href="html/vision-and-mission.html">Vision and Mission</a></li>
+							<li><a href="html/plans.html">Plans</a></li>
+							<li><a href="html/privacy-policy.html">Privacy Policy</a></li>
+							<li><a href="html/about-us.html">About Us</a></li>
+
+						</ul>
+					</div>
+				</li>
+				<li><a href="html/facilities.html">Facility</a></li>
+				<li>Faculties<i class="fa-solid fa-caret-down"></i>
+					<div class="submenu">
+						<ul>
+							<li><a href="html/management.html">Faculty of Management</a></li>
+							<li><a href="html/science.html">Faculty of Science</a></li>
+							<li><a href="html/technology.html">Faculty of Technology</a></li>
+							<li><a href="html/engineering.html">Faculty of Engineering</a></li>
+							<li><a href="html/information-technology.html">Faculty of Information Technology</a></li>
+
+						</ul>
+					</div>
+				</li>
+				<li>Event<i class="fa-solid fa-caret-down"></i>
+					<div class="submenu">
+							<ul>
+								<li><a href="html/regular-event.html">Regular Events in the University Year</a></li>
+								<li><a href="html/communication.html">Communication Resources</a></li>
+								<li><a href="html/digital.html">Digital Communication</a></li>
+								<li><a href="html/photography.html">Photography and Filming</a></li>
+								<li><a href="html/event-managment.html">Event Managment</a></li>
+							</ul>
+						</div>
+				</li>
+				<li><a href="html/centers.html">Centers</a></li>
+				<li><a href="html/news.html">News</a></li>
+				<li><a href="html/contact.html">Contacts</a></li>
+			</ul>
+			
+			<div onClick="toogleDrawer('open')" class="header__menu__mobile"><i class="fa-solid fa-bars"></i></div>
+			
+		</div>
+		<section id="drawer" class="drawer" >
+			<aside>
+				<div class="drawer__header">
+					<span class="close" onClick="toogleDrawer('close')">
+						<i class="fa-solid fa-xmark"></i>
+					</span>
+				</div>
+
+                <ul class="drawer__menu">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li>
+                        <span>About Us<i class="fa-solid fa-caret-down"></i></span>
+                        <ul class="mob-submenu">
+                            <li><a href="html/history.html">History</a></li>
+                            <li><a href="html/vision-and-mission.html">Vision and Mission</a></li>
+                            <li><a href="html/plans.html">Plans</a></li>
+                            <li><a href="html/privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="html/about-us.html">About Us</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="html/facilities.html">Facility</a></li>
+                    <li>
+                        <span>Faculties<i class="fa-solid fa-caret-down"></i></span>
+                        <ul>
+                            <li><a href="html/management.html">Faculty of Management</a></li>
+                            <li><a href="html/science.html">Faculty of Science</a></li>
+                            <li><a href="html/technology.html">Faculty of Technology</a></li>
+                            <li><a href="html/engineering.html">Faculty of Engineering</a></li>
+                            <li><a href="html/information-technology.html">Faculty of Information Technology</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+						<span>Event<i class="fa-solid fa-caret-down"></i></span>
+                        <ul>
+                            <li><a href="html/regular-event.html">Regular Events in the University Year</a></li>
+                            <li><a href="html/communication.html">Communication Resources</a></li>
+                            <li><a href="html/digital.html">Digital Communication</a></li>
+                            <li><a href="html/photography.html">Photography and Filming</a></li>
+                            <li><a href="html/event-managment.html">Event Managment</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="html/centers.html">Centers</a></li>
+                    <li><a href="html/news.html">News</a></li>
+                    <li><a href="html/contact.html">Contacts</a></li>
+                </ul>
+				
+			</aside>
+		</section>
+		<div class="header__image-1">
+				<h1>GETWAY TO THE KNOWLEDGE</h1>
+				<div>
+					<a href="html/singup.html" class="singup__singin"><button type="button" class="header__button"><span class="header__button__bg"></span><h3>Sing Up</h3></button></a>
+					<a href="html/singin.html" class="singup__singin"><button type="button" class="header__button"><span class="header__button__bg"></span><h3>Sing In</h3></button></a>
+				</div>
+		</div>
+		<section>
+			<h2 class="titles">WELCOME TO WESTERN UNIVERSITY</h2>
+			<div class="welcome">
+				
+					<img src="images/home/welscome.jpg" alt="welcome">
+					<p>
+						Western University is a friendly community of fascinating and driven learners, professors, and innovative thinkers located in one of the world's most interesting capital cities.We offer a variety of courses, ranging from undergraduate and postgraduate degrees to short courses and professional credentials, many of which may be completed full-time or part-time to fit your requirements and lifestyle.<br><br>
+						
+						We are completely dedicated to assisting our students in achieving their objectives and achieving success in their jobs. Many of our undergraduate courses are approved by professional organisations and feature some type of job-related learning, such as a placement, client project, or on-campus work experience.
+					</p>
+				
+			</div>
+		</section>
+		<section class="faculty__home">
+				<div>
+					<h2>FACULTIES</h2>
+				
+					<div class="faculty__on__home__page">
+					<div class="faculty__on__fac"><a href="html/management.html"><img src="images/home/faculty-1.jpg" alt="Faculty of Management" width="100%"></a><a href="html/management.html" class="faculty__link"><h3>Faculty of Management</h3></a></div>
+					<div class="faculty__on__fac"><a href="html/science.html"><img src="images/home/faculty-2.jpg" alt="Faculty of Science" width="100%"></a><a href="html/science.html" class="faculty__link"><h3>Faculty of Science</h3></a></div>
+					<div class="faculty__on__fac"><a href="html/technology.html"><img src="images/home/faculty-3.jpg" alt="Faculty of Technology" width="100%"></a><a href="html/technology.html" class="faculty__link"><h3>Faculty of Technology</h3></a></div>
+					<div class="faculty__on__fac"><a href="html/engineering.html"><img src="images/home/faculty-4.jpg" alt="Faculty of Engineering" width="100%"></a><a href="html/engineering.html" class="faculty__link"><h3>Faculty of Engineering</h3></a></div>
+					<div class="faculty__on__fac"><a href="html/information-technology.html"><img src="images/home/faculty-5.jpg" alt="Faculty of Information Technology" width="100%"></a><a href="html/information-technology.html" class="faculty__link"><h3>Faculty of Information Technology</h3></a></div>
+						
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="services__container">
+				<h2>SERVICES</h2>
+				<div class="services__on__home">
+					<img src="images/home/services.jpg" alt="Services">
+					<p>
+						The Western University has an excellent track record of providing research expertise, consultancy services, training programmes,careers guidance for national development.
+						Specialist management services, including setting performance criteria and increasing productivity. Performing other tasks in order to maximize human input to performance improvement.
+						Providing consulting services to the corporate sector in order to help them improve their systems, procedures, and processes, as well as support them in their planning and overall efforts to address the dangers posed by changing environmental conditions.
+					</p>
+				
+				</div>
+			</div>
+		</section>
+		<section>
+		<div>
+			<h2 class="titles">FIND US</h2>
+			<div class="map__on__home">
+					<div>
+						<h3 class="map__h">Our locations</h3>
+						<p class="map__on__home__info">We currently have three sites in Colombo, Kandy and Mathara.</p>
+					</div>
+					<div class="map__responsive">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.80385598095!2d79.8211860158427!3d6.921922576100784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1645428369917!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+						</iframe>
+					</div>	
+			</div>
+		</div>
+	</section>
+	<section>
+		<div>
+			<h2 class="titles">STUDENTS LIFE</h2>
+			<div class="student__life__raw-1">
+				<div class="student__life__img"><img src="images/home/studenr-life-1.jpg" alt="Student life 1" width="100%"></div>
+				<div class="student__life__img"><img src="images/home/studenr-life-2.jpg" alt="Student life 2" width="100%"></div>
+				<div class="student__life__img"><img src="images/home/studenr-life-3.jpg" alt="Student life 3" width="100%"></div>
+			</div>
+		</div>
+		<div>
+			<div class="student__life__raw-1">
+				<div class="student__life__img"><img src="images/home/studenr-life-4.jpg" alt="Student life 1" width="100%"></div>
+				<div class="student__life__img"><img src="images/home/studenr-life-5.jpg" alt="Student life 2" width="100%"></div>
+				<div class="student__life__img"><img src="images/home/studenr-life-6.jpg" alt="Student life 3" width="100%"></div>
+			</div>
+		</div>
+		<div>
+			<div class="student__life__raw-1">
+				<div class="student__life__img"><img src="images/home/studenr-life-7.jpg" alt="Student life 1" width="100%"></div>
+				<div class="student__life__img"><img src="images/home/studenr-life-8.jpg" alt="Student life 2" width="100%"></div>
+				<div class="student__life__img"><img src="images/home/studenr-life-9.jpg" alt="Student life 3" width="100%"></div>
+			</div>
+		</div>
+	</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col">
+						<h4>shotcut</h4>
+						<ul>
+							<li><a href="html/facilities.html">Facilities</a></li>
+							<li><a href="html/centers.html">Centers</a></li>
+							<li><a href="html/event-managment.html">Event</a></li>
+							<li><a href="html/about-us.html">About Us</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Important Details</h4>
+						<ul>
+							<li><a href="html/news.html">Semester Two teaching March – Agust 2022</a></li>
+							<li><a href="html/news.html">Semester one end exam February - 2022</a></li>
+							<li><a href="html/news.html">Semester one end exam March - 2022</a></li>
+							<li><a href="html/news.html">Web Development workshop February - 2022</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Contact Us</h4>
+						<ul>
+							<li><a href="html/contact.html">Western University, 137, Sir James Peris Mawatha, Colombo</a></li>
+							<li><a href="html/contact.html">(+94)11 2345678</a></li>
+							<li><a href="html/contact.html">info@wu.ac.lk</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>follow us</h4>
+						<div class="social-links">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						</div>
+						 <div class="footer-logo">
+							 <a href="index.html"><img src="images/logo.png" width="250px" hight="auto" align="center" alt="Logo"></a>
+						 </div>
+					</div>
+				</div>
+			  <div class="copy-right"><p>©All Right Reserved. Western University | GROUP 08</p></div>
+			</div>
+	   </footer>
+	</body>
+	
+</html>

@@ -1,0 +1,91 @@
+/* Event Pages CSS Style sheet */
+
+.event__bg{
+    min-height:100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1.00)), url(../images/events/event-bg-2.jpg);
+}
+.event-content{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+.event-content h1{
+    text-align: center;
+    color: rgba(0, 179, 176,1);
+    padding-bottom: 50px;
+}
+.event-content h3{
+    margin-top: 20px;
+    display: block;
+    background-color: rgba(0, 179, 176,1.00);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.event-content button{
+    width: 180px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+.event-content button:hover{
+    background: rgba(0, 179, 176,1.00);
+}
+.resource-row{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+    padding-bottom: 42px;
+}
+.resource-call{
+    background: #1f283b;
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+.resource-call h3{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.resource-call p{
+    margin: 15px 15px;
+    padding-bottom: 10px;
+}
+.resource-call ul li .fa-brands{
+    width: 50px;
+}
+.resource-call button{
+    width: 100px;
+    padding:  14px 0;
+    font-size: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: rgba(0, 179, 176,1.00);
+}
+.resource-call button:hover{
+    background: rgba(0, 179, 176,1.00);
+}
+@media (max-width: 1000px){
+    .event__bg{
+        padding-bottom: 35px;
+    }
+    .event-content h1{
+        margin-left: 0;
+        text-align: center;
+        padding-bottom: 28px;
+    }
+    .event-content h3{
+        margin: 0;
+        padding: 14px;
+        text-align: justify;
+    }
+    .resource-row{
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,51 @@
+.header__image{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.heading__title{
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    padding: 28px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content__in__facilities{
+    
+    display: flex;
+    justify-content: center;
+}
+.content__in__facilities > p{
+    width: 50%;
+    text-align: justify;
+    padding: 35px;
+    color:#5C5C5C;
+    border: solid #027D7F;;
+    margin: 28px;
+    
+}
+@media (max-width: 1000px){
+    .heading__title{
+        color: rgba(0,179,176,1.00);
+        background: none;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: translate(-0%, -0%);
+        font-size: 14px;
+        padding: 21px;
+}
+    .faculty__img{
+        display: block;
+}
+    .faculty__img img{
+        padding-bottom: 21px;
+}
+    .content__in__facilities > p{
+        width: 100%;
+        padding: 21px;
+        margin: 0;
+        border: none;
+}
+}
